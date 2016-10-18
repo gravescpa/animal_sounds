@@ -6,4 +6,7 @@ class Dog
         @sound = "bark"
     end
 
+    def get_sound
+        "This dog, #{name}, likes to #{sound}"
+    end
 end

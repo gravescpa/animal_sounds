@@ -6,4 +6,7 @@ class Fox
         @sound = "screech"
     end
 
+    def get_sound
+        "This fox, #{name}, likes to #{sound}"
+    end
 end

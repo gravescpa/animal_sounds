@@ -33,5 +33,20 @@ class TestAnimalSounds < Minitest::Test
 	def test_fox_sound
 		animal = Fox.new("Foxy")
 		assert_equal("screech", animal.sound)
-	end	
+	end
+
+	def test_get_sound_cat
+		animal = Cat.new("Stanley")
+		assert_equal("This cat, Stanley, likes to meow", animal.get_sound)
+	end
+
+	def test_get_sound_dog
+		animal = Dog.new("Winston")
+		assert_equal("This dog, Winston, likes to bark", animal.get_sound)
+	end
+
+	def test_get_sound_fox
+		animal = Fox.new("Foxy")
+		assert_equal("This fox, Foxy, likes to screech", animal.get_sound)
+	end
 end
